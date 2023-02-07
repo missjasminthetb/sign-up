@@ -1,0 +1,64 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+form {
+    display: flex;
+    padding: 20px;
+}
+h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.label input {
+    width: 100%;
+    border-radius: 10px;
+    border-color: transparent;
+    background-color: pink;
+    padding: 10px;
+    color: gray;
+    text-align: center;
+}
+.label input:focus {
+    text-decoration: underline solid black 1px;
+    border: none;
+    outline: rgb(247, 41, 137) solid 0.5px;
+}
+.label {
+    margin: 10px;
+}
+body {
+    margin: 10px;
+}
+.button {
+    color: white;
+    background-color: black;
+    padding: 15px;
+    font-size: 18px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}
+.login{
+    text-decoration: none;
+    color: rgb(247, 41, 137);
+    margin: auto;
+}
+/* mobile queries */
+@media screen and (min-width:500px){
+    form {
+        margin-top: 5px;
+    }
+    .label input {
+        padding: 5px;
+    }
+    body {
+        text-align: center;
+        margin: 30px;
+        box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4789);
+        padding: 10px;
+        width: 40%;
+    }
+}
