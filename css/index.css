@@ -3,10 +3,30 @@
     margin: 0;
     padding: 0;
 }
+
+.error-form{
+    color: red;
+    font-style: italic;
+    margin-left: 5px;
+    display: none;
+}
+
+.show-error{
+    display: block !important;
+}
+
+.input-success{
+    border : 2px solid rgb(74, 202, 74) !important;
+}
+
+.input-error {
+    border:2px solid red !important;
+}
 form {
     display: flex;
     flex-direction: column;
 }
+
 header p {
     font-size: 18px;
     color: rgb(97, 97, 97);
@@ -63,7 +83,7 @@ button {
 }
 
 /* mobile queries */
-@media screen and (min-width:500px){
+@media screen and (min-width:600px){
     form {
         box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4789);
         padding: 5px;
